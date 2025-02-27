@@ -4,7 +4,7 @@
 
 Make sure you have installed node v18+ as some dependencies need it.
 
-Run this command to verify `node -v`
+Run this command to verify: `node -v`
 
 Also make sure you have `npm` installed in your system.
 
@@ -16,7 +16,7 @@ Clone this repository and run `npm i` to install the dependencies.
 
 ## Test implementation (API)
 
-These tests are implemented with `supertest` and use `mocha` as the test framework and written in JS. You can find the tests under the `test/` directory. Visit this [link](https://www.npmjs.com/package/supertest) for more information on _supertest_
+These tests are implemented with `supertest` and use `mocha` as the test framework and written in JS. You can find the tests under the `test/` directory. Visit this [link](https://www.npmjs.com/package/supertest) for more information on _supertest_. I choose this test framework as it's a lightweight one and quite easy to set up and run, making the whole process a bliss.
 
 ### Running the API tests
 
@@ -30,7 +30,7 @@ After the test run, two reports will be automatically created under `mochawesome
 
 These tests are implemented with `Playwright`, a popular and modern tool to write and debug e2e/UI tests. You can find the spec files under `playwright-tests`.
 
-The tests are written in JS.
+I chose this test framework as it is easy to set up and provides many features to make test actions and assertions a great and flawless experience. It is also a very good choice if you want to introduce it to other devs (non-QA profiles), as it provides a very similar experience to other tools that they are already used to, such as _Jest_.
 
 ### Running the Web tests
 
