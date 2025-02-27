@@ -1,31 +1,31 @@
-name: Run the API tests
+name: Playwright Tests
 
 on:
   schedule:
     - cron: '0 */4 * * *' # Run every 4 hours
 
-   push:
+  push:
     branches:
       - main
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: 18
       - name: Install dependencies
         run: npm install
-      - name: Run the API tests
-        run: npm test
+      - name: Run Playwright tests
+        run: npm run play:run
       - name: Upload test report
-        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: api-test-report
-          path: mochawesome-report/mochawesome.html
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 1
