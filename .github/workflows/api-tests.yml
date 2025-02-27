@@ -1,4 +1,4 @@
-name: Run the API tests
+name: API tests
 
 on:
   schedule:
