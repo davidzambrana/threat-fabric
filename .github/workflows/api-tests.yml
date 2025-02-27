@@ -2,7 +2,7 @@ name: Run the API tests
 
 on:
   schedule:
-    - cron: '0 23 * * *' # Runs every day at midnight Madrid time
+    - cron: '0 */4 * * *' # Run every 4 hours
 
   push:
     branches:
