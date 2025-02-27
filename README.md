@@ -2,11 +2,15 @@
 
 ## Generic requirements for both test frameworks
 
-Make sure you have installed node v18+ as some dependencies need it: Run this command to verify `node -v`
+Make sure you have installed node v18+ as some dependencies need it.
 
-Also make sure you have `npm` installed in your system. Run `npm -v` to be able to install the packages.
+Run this command to verify `node -v`
 
-### Instal the packages
+Also make sure you have `npm` installed in your system.
+
+Run `npm -v` to be able to install the packages.
+
+### Install the packages
 
 Clone this repository and run `npm i` to install the dependencies.
 
@@ -48,3 +52,5 @@ After running the tests in headless mode, a test report will be created in the `
 
 - X-browser testing: Include other browsers and devices in the project list to make sure the tests also pass for those
 - Run the tests in CI pipelines to be triggered on any change made in the code repository (app or test code). Depending on the size of the project, we could also consider scheduled runs there and optimize in many different ways
+- Take care of flaky tests
+- Find a healthy balance for parallel tests and workers as we want to have quick feedback but without affecting test reliability
