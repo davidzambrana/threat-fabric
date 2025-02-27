@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '0 */4 * * *' # Run every 4 hours
 
-   push:
+  push:
     branches:
       - main
 
