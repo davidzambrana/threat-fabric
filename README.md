@@ -47,7 +47,7 @@ After running the tests in headless mode, a test report will be created in the `
 
 - _Playwright_ tests are currently configured to run on Firefox only and with `1` retry for non-CI runs
 - I am aware that I could write the API tests also using Playwright, but I used `supertest` to demonstrate that I am able to stand up another framework and not only `Playwright`. In case I needed to set up a test framework just to test APIs, `Playwright` might be an overkill as it brings in many capabilities with it. `supertest` is a lightweight framework designed to test APIs, so I believe it's a good choice for it, also because we may want to decouple UI and API tests in a bigger project.
-- I also added a very simple CI pipeline using _Github Actions_ to run the API tests and upload the test results. This is also useful for me to see how the tests perform over time
+- I also added two very simple CI pipelines using _Github Actions_ to run the API and web tests and make the test results available in the "Upload test report" step. This is also useful for me to see how the tests perform over time. Feel free to move on to the "Actions" section to see the CI runs and test reports.
 
 ### Improvements to be made
 
